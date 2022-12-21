@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Contacts</title>
+    <title>Register</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,7 +53,7 @@
       </div>
     </div>
     <div class="page">
-      <!-- Top Banner--><a class="section section-banner text-center d-none d-xl-block" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-04-1920x60.jpg); background-image: -webkit-image-set( url(images/banner/background-04-1920x60.jpg) 1x, url(images/banner/background-04-3840x120.jpg) 2x )"><img src="images/banner/foreground-04-1600x60.png" srcset="images/banner/foreground-04-1600x60.png 1x, images/banner/foreground-04-3200x120.png 2x" alt="" width="1600" height="310"></a>
+      <!-- Top Banner-->
       <!-- Page Header-->
       <header class="section page-header">
         <!-- RD Navbar-->
@@ -66,7 +66,7 @@
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!-- RD Navbar Brand-->
-                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="{% static 'images/logo-198x66.png' % }" alt="" width="198" height="66"/></a></div>
+                  <div class=""><a class="brand" href="http://127.0.0.1:8000/"><img class="brand-logo-dark" src="https://cdn-icons-png.flaticon.com/512/1056/1056367.png" alt="" width="75"/></a></div>
                 </div>
                 <div class="rd-navbar-right rd-navbar-nav-wrap">
                   <div class="rd-navbar-aside">
@@ -94,74 +94,26 @@
                   <div class="rd-navbar-main">
                     <!-- RD Navbar Nav-->
                     <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="http://127.0.0.1:8000/">Inicio</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About us</a>
+                      {% if esAutenticado %}
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="http://127.0.0.1:8000/carrito/">Listar</a>
                       </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
+                      {% endif %}
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="http://127.0.0.1:8000/registrarse">Registrarse</a>
                       </li>
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="http://127.0.0.1:8000/iniciar-sesion">Iniciar Sesión</a>
+
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="rd-navbar-project-hamburger rd-navbar-project-hamburger-open rd-navbar-fixed-element-1" data-multitoggle=".rd-navbar-inner" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate="data-multitoggle-isolate">
-                  <div class="project-hamburger"><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span><span class="project-hamburger-arrow"></span>
-                  </div>
-                </div>
+                
                 <div class="rd-navbar-project">
                   <div class="rd-navbar-project-header">
                     <h5 class="rd-navbar-project-title">Gallery</h5>
                     <div class="rd-navbar-project-hamburger rd-navbar-project-hamburger-close" data-multitoggle=".rd-navbar-inner" data-multitoggle-blur=".rd-navbar-wrap" data-multitoggle-isolate="data-multitoggle-isolate">
                       <div class="project-close"><span></span><span></span></div>
-                    </div>
-                  </div>
-                  <div class="rd-navbar-project-content rd-navbar-content">
-                    <div>
-                      <div class="row gutters-20" data-lightgallery="group">
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="{% static 'images/project-1-1200x800-original.jpg' %}" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="{% static 'images/project-1-195x164.jpg' %}" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="{% static 'images/project-2-1200x800-original.jpg' %}" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="{% static 'images/project-2-195x164.jpg' %}" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="{% static 'images/project-3-1200x800-original.jpg' %}" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="{% static 'images/project-3-195x164.jpg' %}" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="{% static 'images/project-4-1200x800-original.jpg' %}" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="{% static 'images/project-4-195x164.jpg' %}" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="{% static 'images/project-5-1200x800-original.jpg' %}" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="{% static 'images/project-5-195x164.jpg' %}" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                        <div class="col-6">
-                          <!-- Thumbnail Creative-->
-                          <article class="thumbnail thumbnail-creative"><a href="{% static 'images/project-6-1200x800-original.jpg' %}" data-lightgallery="item">
-                              <div class="thumbnail-creative-figure"><img src="{% static 'images/project-6-195x164.jpg' %}" alt="" width="195" height="164"/>
-                              </div>
-                              <div class="thumbnail-creative-caption"><span class="icon thumbnail-creative-icon linearicons-magnifier"></span></div></a></article>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -174,15 +126,15 @@
       <section class="bg-gray-7">
         <div class="breadcrumbs-custom box-transform-wrap context-dark">
           <div class="container">
-            <h3 class="breadcrumbs-custom-title">Contacts</h3>
+            <h3 class="breadcrumbs-custom-title">Registrarse</h3>
             <div class="breadcrumbs-custom-decor"></div>
           </div>
-          <div class="box-transform" style="background-image: url(images/bg-1.jpg);"></div>
+          <div class="box-transform" style="background-image: url('https://www.benchmarkemail.com/es/wp-content/uploads/sites/4/2020/02/How-to-Compose-Marketing-Emails-to-Get-Replies.jpg');"></div>
         </div>
         <div class="container">
           <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Contacts</li>
+            <li><a href="http://127.0.0.1:8000/">Home</a></li>
+            <li class="active">Registrarse</li>
           </ul>
         </div>
       </section>
@@ -191,46 +143,67 @@
         <div class="container">
           <div class="row row-60 justify-content-center">
             <div class="col-lg-8">
-              <h4 class="text-spacing-25 text-transform-none">Get in Touch</h4>
-              <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+              <h4 class="text-spacing-25 text-transform-none">Registrarse</h4>
+              <form method="post" action="http://127.0.0.1:8000/restaurante-api/api-cliente"> {% csrf_token %}
                 <div class="row row-20 gutters-20">
                   <div class="col-md-6">
                     <div class="form-wrap">
-                      <input class="form-input" id="contact-your-name-5" type="text" name="name" data-constraints="@Required">
-                      <label class="form-label" for="contact-your-name-5">Your Name*</label>
+                      <input class="form-input" id="dni" type="text" name="dni">
+                      <label class="form-label" for="dni">DNI*</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-wrap">
-                      <input class="form-input" id="contact-email-5" type="email" name="email" data-constraints="@Email @Required">
-                      <label class="form-label" for="contact-email-5">Your E-mail*</label>
+                      <input class="form-input" id="nombre" type="text" name="nombre">
+                      <label class="form-label" for="nombre">Nombres*</label>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="pApellido" type="text" name="pApellido">
+                      <label class="form-label" for="pApellido">Primer apellido*</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-wrap">
-                      <!--Select 2-->
-                      <select class="form-input" data-minimum-results-for-search="Infinity" data-constraints="@Required">
-                        <option value="1">Select a Service</option>
-                        <option value="2">Dine-In</option>
-                        <option value="3">Carry-Out</option>
-                        <option value="4">Event Catering</option>
-                      </select>
+                      <input class="form-input" id="sApellido" type="text" name="sApellido">
+                      <label class="form-label" for="sApellido">Segundo apellido*</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-wrap">
-                      <input class="form-input" id="contact-phone-5" type="text" name="phone" data-constraints="@Numeric">
-                      <label class="form-label" for="contact-phone-5">Your Phone*</label>
+                      <input class="form-input" id="mail" type="email" name="mail">
+                      <label class="form-label" for="mail">E-mail*</label>
                     </div>
                   </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="direccion" type="text" name="direccion">
+                      <label class="form-label" for="direccion">Dirección*</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="opinion" type="text" name="opinion">
+                      <label class="form-label" for="opinion">Opinión*</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-message-5" type="password" name="contrasena">
+                      <label class="form-label" for="contact-message-5">Contraseña*</label>
+                    </div>
+                  </div>
+                  
                   <div class="col-12">
                     <div class="form-wrap">
-                      <label class="form-label" for="contact-message-5">Message</label>
-                      <textarea class="form-input textarea-lg" id="contact-message-5" name="message" data-constraints="@Required"></textarea>
+                      <!--<input class="form-input" id="contact-email-5" type="email" name="email" data-constraints="@Email @Required">
+                      <textarea class="form-input textarea-lg" id="contact-message-5" name="message" data-constraints="@Required"></textarea>-->
                     </div>
                   </div>
                 </div>
-                <button class="button button-secondary button-winona" type="submit">Contact us</button>
+                <button class="button button-secondary button-winona" type="submit" onclick="window.location.href = 'http://127.0.0.1:8000/';">Registrarse</button>
               </form>
             </div>
             <div class="col-lg-4">
@@ -273,10 +246,9 @@
         </div>
       </section>
 
-      <!-- Bottom Banner--><a class="section section-banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" style="background-image: url(images/banner/background-03-1920x310.jpg); background-image: -webkit-image-set( url(images/banner/background-03-1920x310.jpg) 1x, url(images/banner/background-03-3840x620.jpg) 2x )"><img src="{% static 'images/banner/foreground-03-1600x310.png'% }" srcset="{% static 'images/banner/foreground-03-1600x310.png' %} 1x,{% static 'images/banner/foreground-03-3200x620.png' %} 2x" alt="" width="1600" height="310"></a>
       <!-- Page Footer-->
       <footer class="section footer-modern context-dark footer-modern-2">
-        <div class="footer-modern-line">
+        <!--<div class="footer-modern-line">
           <div class="container">
             <div class="row row-50">
               <div class="col-md-6 col-lg-4">
@@ -304,8 +276,9 @@
               <div class="col-lg-4 col-xl-5">
                 <h5 class="footer-modern-title oh-desktop"><span class="d-inline-block wow slideInLeft">Newsletter</span></h5>
                 <p class="wow fadeInRight">Sign up today for the latest news and updates.</p>
-                <!-- RD Mailform-->
+                RD Mailform
                 <form class="rd-form rd-mailform rd-form-inline rd-form-inline-sm oh-desktop" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="{% static 'bat/rd-mailform.php' %}">
+
                   <div class="form-wrap wow slideInUp">
                     <input class="form-input" id="subscribe-form-2-email" type="email" name="email" data-constraints="@Email @Required"/>
                     <label class="form-label" for="subscribe-form-2-email">Enter your E-mail</label>
@@ -317,7 +290,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
         <div class="footer-modern-line-2">
           <div class="container">
             <div class="row row-30 align-items-center">
